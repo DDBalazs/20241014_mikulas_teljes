@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mikulás ürlap</title>
+</head>
+<body>
+    <div>
+        <h1>Mikluás látogatási kérelem</h1>
+        <h2>Bevezető</h2>
+        <p>Nagy pelyhekben hull a hó, mindjárt itt a Mikulás. Persze rengeteg dolga van és minden
+            gyerek egyformán fontos neki, ezért segítségre van szüksége. Az ajándékigények feldolgozásának
+            elősegítésére kérlek, teljesen őszintén töltsd ki az alábbi űrlapot! Ne feledd! A Mikulás előtt
+            nincs titok.
+        </p>
+        <div>
+            <form action="">
+
+                <h2>A jelentkező adatai</h2>
+                <p>Milyen nevet adtak neked a szüleid?</p>
+                <input type="text" required>
+                <p>Hol élsz?</p>
+                <input type="text" required>
+
+                <h2>Jó voltál?</h2>
+                <p>Kérlek, jelöld be az elmúlt 12 havi magaviseletednek megfelelő értéket! 
+                    Ne feledd! A Mikulás előtt nincs titok.</p>
+                <p id="bal">Angyali</p>
+                <input type="range" required>
+                <p id="jobb">Vásott</p>
+                <p>Ennek fényében mit szeretnél karácsonyra?</p>
+                <textarea></textarea>
+
+                <h2>Hozzáférési adatok</h2>
+                <h3>Mi a tetőtök leejtésszöge?</h3>
+                <input type="number">fok
+                <p>Ha a tető lejtése eléri/meghaladja a 30 fokot, akkor kérlek, csatolj egy vázlatrajzot a
+                 tetőről, feltüntetve legalább kettő (2) rögzítési pontot (pl. TV antenna, szellőző, kémény, 
+                 stb.)
+                </p>
+                <input type="file">
+                <h3>A tetőtök képes elviselni legalább 1 tonna tömeget négyzetméterenként? (9 rénszarvas, komplett szán, meg egy túlméretes pali furi ruhában)</h3>
+                <label for="igen"> Igen </label>
+                <input type="radio" id="deigen" name="interest" value="igen" checked >
+                <label for="nem">Nem / Ebben az esetben az autóbehajtón egyetlen macskánál nagyobb tárgy sem maradhat.</label>
+                <input type="radio" id="man" name="interest" value="nem" >
+                <label for="talan">Talán / Ebben az esetben kérlek, csatolj egy regisztrált tervező által kiállított nyilatkozatot a tető átlagos teherbírásáról.</label>
+                <input type="radio" id="woman" name="interest" value="talan" >
+                <input type="file">
+
+                <h3>Van kéményetek?</h3>
+                <label for="van">Van / Ebben az esetben mindenképpen ellenőrizd, hogy a tűztér mentes minden parázsló és éles tárgytól.
+                    A légjárat becsült átlagos átmérője <input type="number">centiméter<br>
+                    Mikor volt sepertetve?<input type="date">
+                </label>
+                <input type="radio" id="talan" name="interest" value="talan" checked>
+                <label for="nincs">Nincs / Ebben az esetben kérlek, aznap este hagyd a hátsó ajtót résnyire nyitva.</label>
+                <input type="radio" id="nincs" name="interest" value="nincs">
+
+                <h2>Ajándék elhelyezés részletei</h2>
+                <p>Hol szeretnéd megtalálni a meglepetést?</p>
+                <label for="labbeli">Lábbeliben(Kérlek add meg a méretét) <input type="number"></label>
+                <input type="radio" id="labbeli" name="interest" value="labbeli">
+                <label for="agyveg">Ágy végében</label>
+                <input type="radio" id="agyveg" name="interest" value="agyveg">
+                <label for="karacsonyfa">Karácsonyfa alatt</label>
+                <input type="radio" id="karacsonyfa" name="interest" value="karacsonyfa">
+                <label for="elrejt">Elrejtve, ebben az esetben állítsd meg a megtalálás nehézségét</label>
+                <p id="bal">Azonnal legyen meg</p>
+                <input type="range" id="elrejt">
+                <p id="jobb">Rámehet az egész nap</p>
+
+                <h2>Frissítőkről szóló rész</h2>
+                <h3>Ki lesz készítve némi frissítő?</h3>
+                <label for="frissito">Igen</label>
+                <input type="radio" id="frissito" name="interest" value="frissito">
+                <h3>Milyen tipusú frissítők lesznek kikészítve?</h3><p>(Kérlek egynél mindenféle képpen többett adjál meg!)</p>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
